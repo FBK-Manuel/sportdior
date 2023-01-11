@@ -2,3 +2,4 @@
 
 ## How To
 - Use Xampp
+- Launch project
