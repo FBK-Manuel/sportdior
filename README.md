@@ -7,5 +7,4 @@
 
 ## Contribution
 
-No contribution allowed
-<!-- changes can be allowed -->
+- Make PR
