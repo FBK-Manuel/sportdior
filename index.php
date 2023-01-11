@@ -150,7 +150,7 @@ h5 {
                             <div class="w3-col m4 w3-hide-small">
                                 <p><span class="w3-padding-large w3-right"><b class="w3-text-blue"><a
                                                 style="text-decoration: none;" href=""> <i class="fa fa-comment"></i>
-                                                Comments Color Red
+                                                Comments
                                                  </a></b> <span class="w3-tag w3-blue w3-round-large">0</span></span>
                                 </p>
                             </div>
