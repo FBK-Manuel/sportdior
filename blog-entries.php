@@ -4,7 +4,11 @@
 
 <!-- post 1 -->
 <!--Start Blog entry  -->
+<<<<<<< HEAD
 <section id="post1-section">
+=======
+<article id="post1-section">
+>>>>>>> origin/updates
     <?php foreach ($result as $row) { ?>
     <div class="w3-card-4 w3-margin w3-white">
         <!-- images -->
@@ -15,7 +19,11 @@
         <div class="w3-container">
             <?php echo "<h4 style='font-family:Verdana;'><b>" . $row['title'] . "</b></h4>"; ?>
             <?php echo "<h5>" . $row['description'] . "</5>"; ?>
+<<<<<<< HEAD
             <?php echo "<h5>" . $row['date'] . "</5>"; ?> |
+=======
+            <?php echo "<h5>" . $row['date'] . "</h5>"; ?> |
+>>>>>>> origin/updates
             <p class="w3-opacity">Posted by <i class="w3-text-green">admin</i></p> |
             <span class="w3-opacity">
                 <?php
@@ -43,7 +51,13 @@
 
         <!-- articles -->
         <div class="w3-container">
+<<<<<<< HEAD
             <?php echo "<p>" . $row['textarea'] . "</p>"; ?>
+=======
+
+            <?php echo "<h6>" . nl2br($row['textarea']) . "</h6>"; ?>
+
+>>>>>>> origin/updates
             <div class="w3-row">
                 <div class="w3-col m8 s12">
 
@@ -65,7 +79,11 @@
         </div>
     </div>
     <?php } ?>
+<<<<<<< HEAD
 </section>
+=======
+</article>
+>>>>>>> origin/updates
 <hr>
 
 <!-- End blog entry-->

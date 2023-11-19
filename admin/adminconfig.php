@@ -33,6 +33,20 @@ if (isset($_POST['submit'])) {
     header('location:404.php');
   }
 }
+// update the status of the view for each post
+if (isset($_REQUEST['id'])) {
+  # code...
+  $id = $_REQUEST['id'];
+  $sql = ("UPDATE articles SET count = count + 1 WHERE id = '$id' ");
+  mysqli_query($db, $sql);
+}
+
+
+// Retrieve the current visitor count for this post
+// $res = $db->query("SELECT count FROM articles");
+// $response = mysqli_fetch_assoc($result);
+
+
 $result = mysqli_query($db, "SELECT * FROM articles ORDER BY id DESC");
 
 

@@ -51,7 +51,12 @@
         <div class="w3-container w3-white">
             <i
                 class="fa fa-facebook-official w3-padding-16 w3-margin w3-hover-opacity w3-text-blue w3-round-xxlarge w3-large"></i><a
+<<<<<<< HEAD
                 style="text-decoration: none;" class="w3-text-blue" href="https://facebook.com">facebook</a>
+=======
+                style="text-decoration: none;" class="w3-text-blue"
+                href="https://www.facebook.com/groups/259584382122208/?ref=share&mibextid=S66gvF">facebook</a>
+>>>>>>> origin/updates
             <i
                 class="fa fa-instagram w3-text-brown w3-hover-opacity w3-padding-16 w3-margin w3-round-xxlarge w3-large"></i><a
                 style="text-decoration: none;" class="w3-text-grey"

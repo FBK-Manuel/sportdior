@@ -38,6 +38,10 @@
         <a href="trending.php" class="w3-bar-item w3-button"><b>Add Trending Post</b></a>
         <a href="trendingtable.php" class="w3-bar-item w3-button"><b>View Trending Post</b></a>
         <a href="contact-table.php" class="w3-bar-item w3-button"><b>Contact List</b></a>
+<<<<<<< HEAD
+=======
+        <a href="viewCounter.php" class="w3-bar-item w3-button"><b>Total Traffic</b></a>
+>>>>>>> origin/updates
         <a href="subscribe_table.php" class="w3-bar-item w3-button"><b>Subscribers</b></a>
         <a href="notification-table.php" class="w3-bar-item w3-button"><b>Notification</b></a>
         <a href="search.php" class="w3-bar-item w3-button"><b>Search</b></a>

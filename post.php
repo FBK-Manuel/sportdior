@@ -1,8 +1,6 @@
 <?php include("admin/adminconfig.php"); ?>
-<?php include("admin/counter.php"); ?>
+
 <?php include "headers.php"; ?>
-
-
 
 <h2 class="w3-left w3-padding"><b><a href="" class="w3-text-blue" style="text-decoration: none;"> Home</a> >
         Read More</b></h2>
@@ -15,17 +13,19 @@
 
         <!-- post 1 -->
         <!--Start Blog entry  -->
-        <section id="post1-section">
+        <article id="post1-section">
             <?php foreach ($result as $row) { ?>
-            <div class="w3-card-4 w3-margin w3-white">
-                <!-- images -->
-                <img src="<?php echo "./admin/images/" . $row['image']; ?>" width="100%" alt="image">
-                <!-- write ups -->
-                <div class="w3-container">
-                    <?php echo "<h4 style='font-family:Verdana;'><b>" . $row['title'] . "</b></h4>"; ?>
-                    <?php echo "<h5>" . $row['description'] . "</5>"; ?>
-                    <?php echo "<h5>" . $row['date'] . "</5>"; ?> | <span class="w3-opacity">
-                        <?php
+                <div class="w3-card-4 w3-margin w3-white">
+                    <!-- images -->
+                    <img src="<?php echo "./admin/images/" . $row['image']; ?>" width="100%" alt="image">
+                    <!-- write ups -->
+                    <div class="w3-container">
+                        <?php echo "<h4 style='font-family:Verdana;'><b>" . $row['title'] . "</b></h4>"; ?>
+                        <?php echo "<h5>" . $row['description'] . "</5>"; ?>
+                        <?php echo "<h5>" . $row['date'] . "</h5>"; ?>
+
+                        <span class="w3-opacity">
+                            <?php
                             $post_time = $row['date']; // Replace this with the actual time the post was created
                             $current_time = date("Y-m-d H:i:s");
                             $time_diff = date_diff(date_create($post_time), date_create($current_time));
@@ -44,26 +44,27 @@
                                 echo "a few seconds ago";
                             }
                             ?>
-                        <?php echo $_SESSION['views'] . 'views' ?>
-                    </span>
 
-                </div>
-                <!-- articles -->
-                <div class="w3-container">
-                    <?php echo "<p>" . $row['longtextarea'] . "</p>"; ?>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                        </div>
-                        <div class="w3-col m4">
-                            <div class="w3-container w3-right">
+                        </span>
+                        <?php echo "<span class='w3-opacity w3-right' ><i class='fa fa-eye'></i> Views &nbsp;" . $row['count'] . "</span>"; ?>
+                    </div>
+
+                    <!-- articles -->
+                    <div class="w3-container">
+                        <?php echo "<h6>" .  nl2br($row['longtextarea']) . "</h6>"; ?>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                            </div>
+                            <div class="w3-col m4">
+                                <div class="w3-container w3-right">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <?php } ?>
 
-        </section>
+        </article>
         <hr>
         <!-- End blog entry-->
     </div>

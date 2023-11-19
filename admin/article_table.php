@@ -22,6 +22,7 @@
                     <th>TextArea</th>
                     <th>Read More</th>
                     <th>DateTime</th>
+                    <th>Views</th>
                     <th>TimeStamp</th>
                     <th>Image</th>
                     <th>Action</th>
@@ -32,7 +33,7 @@
                 $conn = mysqli_connect('localhost', 'root', '',);
                 $db = mysqli_select_db($conn, "db_blog");
 
-                $query = "SELECT * FROM `articles` ";
+                $query = "SELECT * FROM `articles`  ";
                 $query_run = mysqli_query($conn, $query);
 
                 while ($row = mysqli_fetch_array($query_run)) {
@@ -44,6 +45,7 @@
                     <td><?php echo $row['textarea']; ?></td>
                     <td><?php echo $row['longtextarea']; ?></td>
                     <td><?php echo $row['datetime']; ?></td>
+                    <td><?php echo $row['count']; ?></td>
                     <td><?php echo $row['date']; ?></td>
                     <td><img src="<?php echo "images/" . $row['image']; ?>" width="100px" alt="image"> </td>
 

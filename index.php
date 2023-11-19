@@ -1,5 +1,9 @@
 <?php include "headers.php"; ?>
 <?php include "notification.php"; ?>
+<<<<<<< HEAD
+=======
+<?php include "admin/counter.php"; ?>
+>>>>>>> origin/updates
 
 
 <h2 class="w3-left w3-padding"><b>Home</b></h2>
