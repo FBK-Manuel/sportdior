@@ -30,14 +30,14 @@
 
             while ($row = mysqli_fetch_array($query_run)) {
             ?>
-                <tr>
-                    <td><?php echo $row['id']; ?></td>
-                    <td><?php echo "Visitors:&nbsp;" . $row['visit']; ?></td>
-                    <td><?php echo  $row['timestamp']; ?></td>
-                    <td>
-                        <p class="w3-badge w3-blue">10</p>
-                    </td>
-                </tr>
+            <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo "Visitors:&nbsp;" . $row['visit']; ?></td>
+                <td><?php echo  $row['timestamp']; ?></td>
+                <td>
+                    <p class="w3-badge w3-blue">10</p>
+                </td>
+            </tr>
 
             <?php
             }

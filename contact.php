@@ -1,27 +1,27 @@
 <?php
 if (isset($_POST['submit'])) {
-  # Create database connection...
-  require 'connfig.php';
+    # Create database connection...
+    require 'connfig.php';
 
-  $Fname = mysqli_real_escape_string($connfig, $_POST['first']);
-  $Lname = mysqli_real_escape_string($connfig, $_POST['last']);
-  $email = mysqli_real_escape_string($connfig, $_POST['email']);
-  $phone = mysqli_real_escape_string($connfig, $_POST['phone']);
-  $msg = mysqli_real_escape_string($connfig, $_POST['message']);
+    $Fname = mysqli_real_escape_string($connfig, $_POST['first']);
+    $Lname = mysqli_real_escape_string($connfig, $_POST['last']);
+    $email = mysqli_real_escape_string($connfig, $_POST['email']);
+    $phone = mysqli_real_escape_string($connfig, $_POST['phone']);
+    $msg = mysqli_real_escape_string($connfig, $_POST['message']);
 
-  //Here is sql syntax
-  $sql = "INSERT INTO contact (first, last, email, phone, message) VALUES ('$Fname', '$Lname', '$email', '$phone', '$msg')";
+    //Here is sql syntax
+    $sql = "INSERT INTO contact (first, last, email, phone, message) VALUES ('$Fname', '$Lname', '$email', '$phone', '$msg')";
 
-  $result = mysqli_query($connfig, $sql);
+    $result = mysqli_query($connfig, $sql);
 
-  if (!$result) {
-    # code...
-    die('Could not post data!' . 'mysqli_query()');
-  } else {
-    echo "<script> window.alert('Thanks for contacting us, we get back to u as soon as possible.')</script>";
-    header('Location:thanks.php');
-    exit();
-  }
+    if (!$result) {
+        # code...
+        die('Could not post data!' . 'mysqli_query()');
+    } else {
+        echo "<script> window.alert('Thanks for contacting us, we get back to u as soon as possible.')</script>";
+        header('Location:thanks.php');
+        exit();
+    }
 }
 
 ?>

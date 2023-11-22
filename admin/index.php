@@ -17,24 +17,6 @@ if (isset($_GET['logout'])) {
 
 
 <div class="w3-container">
-<<<<<<< HEAD
-    <h2 class="w3-text-blue w3-center"><b>Make a Post</b></h2>
-</div>
-<div class="w3-container w3-light-grey">
-    <form class="w3-container w3-card-4" enctype="multipart/form-data" action="" method="post">
-        <p><input class="w3-input w3-border" name="title" type="text" placeholder="title of the post" required></p>
-        <p><input class="w3-input w3-border" name="description" type="text"
-                placeholder="Short Description aboot the post.." required></p>
-        <p><textarea class="w3-input w3-border" cols="40" rows="5" name="textarea" type="text"
-                placeholder="Type your Article for the main page.." required></textarea></p>
-        <p><textarea class="w3-input w3-border" cols="40" rows="5" name="longtextarea" type="text"
-                placeholder="Insert all your content for the read more page..." required></textarea></p>
-        <p><input type="text" class="w3-input w3-border" name="datetime" id="datetime"
-                placeholder="E.g, 2023-01-01 Add your date you are posting this article" required></p>
-        <p><input class="w3-border" type="file" id="img_div" src="image" name="image" alt="image"></p>
-        <p><button class="w3-btn w3-blue w3-round-large" name="submit" type="submit">Post Article</button></p>
-    </form>
-=======
         <h2 class="w3-text-blue w3-center"><b>Make a Post</b></h2>
 </div>
 <div class="w3-container w3-light-grey">
@@ -47,7 +29,6 @@ if (isset($_GET['logout'])) {
                 <p><input class="w3-border" type="file" id="img_div" src="image" name="image" alt="image"></p>
                 <p><button class="w3-btn w3-blue w3-round-large" name="submit" type="submit">Post Article</button></p>
         </form>
->>>>>>> origin/updates
 </div>
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Sportsdior</title>
+<title>Sportdior</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <link rel="shortcut icon" href="images/logo/logo.png" sizes="32x32" type="images/x-icon">
 <script src="assets/js/toggles.js"></script>
 
@@ -24,6 +23,63 @@ h5 {
 
 #more {
     display: none;
+}
+
+.share-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.share-btn a i {
+    font-size: 25px;
+}
+
+.share-btn a {
+    margin: 12px 0;
+    transition: 500ms;
+}
+
+.share-btn a:hover {
+    transform: scale(1.2);
+}
+
+.share-btn .fa-facebook-square {
+    color: #0078d7;
+}
+
+.share-btn .fa-whatsapp {
+    color: #25d366;
+}
+
+.share-btn .fa-linkedin-square {
+    color: #0a66c2;
+}
+
+.share-btn .fa-twitter-square {
+    color: #1da1f2;
+}
+
+@media (max-width: 550px) {
+    .share-btn {
+        background: white;
+        transform: unset;
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        flex-direction: row;
+        box-shadow: 4px 0 3px rgba(0, 0, 0, 0.3);
+        padding: 16px 0;
+        justify-content: center;
+    }
+
+    .share-btn a {
+        margin: 0 32px;
+    }
 }
 </style>
 </style>

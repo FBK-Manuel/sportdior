@@ -12,15 +12,15 @@
     <link rel="shortcut icon" href="images/logo/faviconee.png" sizes="32x32" type="images/x-icon">
     <script src="script.js"></script>
     <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-        font-family: "Raleway", sans-serif
-    }
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
     </style>
 </head>
 
@@ -30,18 +30,15 @@
         <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
         <!-- logged in user information -->
         <?php if (isset($_SESSION['username'])) : ?>
-        <p>Welcome.. <strong><?php echo $_SESSION['username']; ?></strong></p>
-        <hr>
+            <p>Welcome.. <strong><?php echo $_SESSION['username']; ?></strong></p>
+            <hr>
         <?php endif ?>
         <a href="index.php" class="w3-bar-item w3-button"><b>Add Post</b></a>
         <a href="article_table.php" class="w3-bar-item w3-button"><b>View Post</b></a>
         <a href="trending.php" class="w3-bar-item w3-button"><b>Add Trending Post</b></a>
         <a href="trendingtable.php" class="w3-bar-item w3-button"><b>View Trending Post</b></a>
         <a href="contact-table.php" class="w3-bar-item w3-button"><b>Contact List</b></a>
-<<<<<<< HEAD
-=======
         <a href="viewCounter.php" class="w3-bar-item w3-button"><b>Total Traffic</b></a>
->>>>>>> origin/updates
         <a href="subscribe_table.php" class="w3-bar-item w3-button"><b>Subscribers</b></a>
         <a href="notification-table.php" class="w3-bar-item w3-button"><b>Notification</b></a>
         <a href="search.php" class="w3-bar-item w3-button"><b>Search</b></a>
@@ -55,7 +52,6 @@
         <div class="w3-blue">
             <button id="openNav" class="w3-button w3-blue w3-xlarge" onclick="w3_open()">&#9776;</button>
             <?php if (isset($_SESSION['username'])) : ?>
-            <p class="w3-right"></p>Welcome.. <strong
-                class="w3-black w3-round-large w3-padding"><?php echo $_SESSION['username']; ?></strong></p>
+                <p class="w3-right"></p>Welcome.. <strong class="w3-black w3-round-large w3-padding"><?php echo $_SESSION['username']; ?></strong></p>
             <?php endif ?>
         </div>

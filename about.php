@@ -14,11 +14,7 @@
             <img src="images/logo/backg.png" style="width:100%">
             <div class="w3-container w3-white">
                 <h3><b>SPORTSDIOR</b></h3>
-<<<<<<< HEAD
-                <h5>Home of Sports, entertainment.</h5>
-=======
                 <h5>Home of Sports, entertainment.3</h5>
->>>>>>> origin/updates
                 <p>
                     <i class="w3-tag w3-center">LOVER OF FOOTBALL</i>
 
